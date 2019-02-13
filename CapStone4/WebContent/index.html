@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="style" href="styles.css"/>
+<title>BLACK TECH MARKET</title>
+</head>
+<style>
+body {
+  background-color: rgb(47,79,79);
+}
+</style>
+<body>
+<div class = "header">
+	<p>Black Robot Tech Market</p>
+</div>
+<div class = "table">
+	<table>
+	<tr>
+		<th class = "item">Item</th>
+		<th>Price</th>
+		<th></th>
+	</tr>
+	<tr>
+		<td class ="item">Destroyer Bot</td>
+		<td>$25.00</td>
+		<td><button onclick = "addItem('Destroyer Bot', 25.00)">Add to cart</button></td>
+		<td><button onclick = "deleteItem('Destroyer Bot', --25.00)">Delete from cart</button></td>
+	</tr>
+	<tr>
+		<td class ="item">Cleaner</td>
+		<td>$300.60</td>
+		<td><button onclick = "addItem('Cleaner Bot', 300.60)">Add to cart</button></td>
+		<td><button onclick = "deleteItem('Cleaner Bot' -300.60)">Delete from cart</button></td>
+	</tr>
+	<tr>
+		<td class ="item">Camera Bot</td>
+		<td>$450.00</td>
+		<td><button onclick = "addItem('Camera Bot', 450.00)">Add to cart</button></td>
+		<td><button onclick = "deleteItem('Camera Bot' -450.00)">Delete from cart</button></td>
+	</tr>
+	<tr>
+		<td class ="item">Buddy Bot</td>
+		<td>$50.00</td>
+		<td><button onclick = "addItem('Buddy Bot', 50.00)">Add to cart</button></td>
+		<td><button onclick = "deleteItem('Buddy Bot' -50.00)">Delete from cart</button></td>
+	</tr>
+	<tr>
+		<td class ="item">Java Bot</td>
+		<td>$3.14</td>
+		<td><button onclick = "addItem('Java Bot', 3.14)">Add to cart</button></td>
+		<td><button onclick = "deleteItem('Java Bot' -3.14)">Delete from cart</button></td>
+	</tr>
+	<tr>
+		<td class ="item">Bender</td>
+		<td>$100.99</td>
+		<td><button onclick = "addItem('Bender', 100.99)">Add to cart</button></td>
+		<td><button onclick = "deleteItem('Bender' -100.99)">Delete from cart</button></td>
+	</tr>
+	</table>
+</div>
+
+<div class = "table">
+	<p class = "check-out">Shopping Cart</p>
+	<table>
+	<tr id = "cartHead">
+		<th>Item</th>
+		<th>Price</th>
+	</tr>
+	
+	</table>
+</div>
+<button onclick = "checkOut()">Check Out</button>
+<div class = "table">
+	<table>
+	<tr>
+	<td class = "cart">Sub Total</td>
+	<td id = "cart"></td>
+	</tr>
+	<tr>
+	<td class = "cart">MI tax @ 6%</td>
+	<td id = "cartTax"></td>
+	<tr>
+	<td class = "cart">Grand Total</td>
+	<td id = "cartTotal"></td>
+	</table>
+</div>
+<script src = "script.js"></script>
+</body>
+</html>
